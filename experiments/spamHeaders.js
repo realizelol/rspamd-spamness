@@ -240,7 +240,7 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                         toggleHeaderHeight(document, "collapse");
                     } else {
                         document.getElementById("expandedRspamdSpamnessRulesBox").classList.remove("fieldCollapsed");
-                        document.getElementById("heightButton").style["display"] = "none;";
+                        document.getElementById("heightButton").style["display"] = "none";
                     }
                 },
 
