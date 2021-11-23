@@ -81,10 +81,10 @@ mail-link:hover {
 }
 .fieldCollapsed {
     overflow-y: hidden;
-    height: 100vh;
+    height: auto;
 }
 #heightButton {
-    height: 100%;
+    height: calc(1.6em + 2px);
     min-height: calc(1.6em + 2px);
     min-width: unset;
     margin-top: 2px;
