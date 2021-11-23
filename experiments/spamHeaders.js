@@ -225,7 +225,13 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                 },
 
                 clearSymbolsHeader(tabId, show_n_lines) {
-                    if(show_n_lines !== "0") {
+                    const headerRowValue = document.getElementById("expandedRspamdSpamnessRulesBox");
+                    const button = document.getElementById("heightButton");
+                    if(show_n_lines === "0") {
+                        button.value = "collapse";
+                        headerRowValue.classList.remove("fieldCollapsed");
+                        headerRowValue.style["max-height"] = null;
+                    } else {
                         maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
                     }
 
