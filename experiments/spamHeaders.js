@@ -237,7 +237,9 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                     while (parent.firstChild) {
                         parent.removeChild(parent.firstChild);
                     }
-                    toggleHeaderHeight(document, "collapse");
+                    if(show_n_lines !== "0"){
+                        toggleHeaderHeight(document, "collapse");
+                    }
                 },
 
                 removeHeight(tabId, elementId) {
