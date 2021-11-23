@@ -225,7 +225,9 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                 },
 
                 clearSymbolsHeader(tabId, show_n_lines) {
-                    maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
+                    if(show_n_lines !== "0") {
+                        maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
+                    }
 
                     const document = getDocumentByTabId(tabId);
                     const parent = document.getElementById("links");
