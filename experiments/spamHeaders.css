@@ -70,7 +70,6 @@ mail-link:hover {
 
 #expandedRspamdSpamnessRulesBox {
     width: 100%;
-    display: flex;
     height: min-content;
 }
 
