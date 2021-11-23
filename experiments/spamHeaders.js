@@ -226,8 +226,7 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
 
                 clearSymbolsHeader(tabId, show_n_lines) {
                     if(show_n_lines === "0"){
-                        show_n_lines = 1;
-                        maxHeight = "100%";
+                        maxHeight = "auto";
                     } else {
                         maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
                     }
