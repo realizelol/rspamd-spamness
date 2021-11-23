@@ -228,7 +228,7 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                     const headerRowValue = document.getElementById("expandedRspamdSpamnessRulesBox");
                     const button = document.getElementById("heightButton");
                     if(show_n_lines === "0") {
-                        button.value = "collapse";
+                        button.value = "expand";
                         headerRowValue.classList.remove("fieldCollapsed");
                         headerRowValue.style["max-height"] = null;
                     } else {
