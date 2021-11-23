@@ -232,6 +232,7 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                     //    headerRowValue.classList.remove("fieldCollapsed");
                     //    headerRowValue.style["max-height"] = null;
                     //} else {
+                    if(show_n_lines === "0"){ show_n_lines = 1; }
                         maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
                     //}
 
