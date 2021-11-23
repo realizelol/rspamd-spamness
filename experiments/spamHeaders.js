@@ -225,16 +225,11 @@ var spamHeaders = class extends ExtensionCommon.ExtensionAPI {
                 },
 
                 clearSymbolsHeader(tabId, show_n_lines) {
-                    //const headerRowValue = document.getElementById("expandedRspamdSpamnessRulesBox");
-                    //const button = document.getElementById("heightButton");
-                    //if(show_n_lines === "0") {
-                    //    button.value = "expand";
-                    //    headerRowValue.classList.remove("fieldCollapsed");
-                    //    headerRowValue.style["max-height"] = null;
-                    //} else {
-                    if(show_n_lines === "0"){ show_n_lines = 1; }
-                        maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
-                    //}
+                    if(show_n_lines === "0"){
+                        show_n_lines = 1;
+                        toggleHeaderHeight(document, expand)
+                    }
+                    maxHeight = "calc((1px + 1.4em) * " + show_n_lines + " + 0.2em + 3px)";
 
                     const document = getDocumentByTabId(tabId);
                     const parent = document.getElementById("links");
